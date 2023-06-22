@@ -1,0 +1,25 @@
+@import 'vars';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+}
+
+.center {
+  padding-left: calc(50% - 620px);
+  padding-right: calc(50% - 620px);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: $textColor;
+}
+
+@import 'header';
+@import 'games';
