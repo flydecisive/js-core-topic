@@ -1,0 +1,33 @@
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%),
+    url('../img/header-bg.png');
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 494px;
+  padding-top: 217px;
+
+  &__text {
+    max-width: 481px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: $textColor;
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
+
+  &__button {
+    background: $buttonColor;
+    border-radius: 30px;
+    width: 234.06px;
+    height: 48.6px;
+    color: $textColor;
+    border: none;
+
+    &:hover {
+      cursor: url('../img/cursor.png'), pointer;
+    }
+  }
+}
