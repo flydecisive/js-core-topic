@@ -43,4 +43,29 @@
       }
     }
   }
+
+  .game {
+    padding-top: 51px;
+    padding-bottom: 85px;
+    &__info {
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 64px;
+    }
+
+    &__content {
+      align-items: center;
+      gap: 32px;
+    }
+
+    &__text {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .heading {
+    font-size: 32px;
+  }
 }

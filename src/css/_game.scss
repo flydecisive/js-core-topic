@@ -1,0 +1,27 @@
+.game {
+  background-color: $sectionBgColor;
+  padding-top: 233px;
+  padding-bottom: 233px;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    max-width: 584px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 32px;
+  }
+
+  &__text {
+    color: $textColor;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+  }
+}

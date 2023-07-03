@@ -17,17 +17,4 @@
     margin-top: 32px;
     margin-bottom: 44px;
   }
-
-  &__button {
-    background: $buttonColor;
-    border-radius: 30px;
-    width: 234.06px;
-    height: 48.6px;
-    color: $textColor;
-    border: none;
-
-    &:hover {
-      cursor: url('../img/cursor.png'), pointer;
-    }
-  }
 }
