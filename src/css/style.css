@@ -19,6 +19,27 @@ body {
   color: #fff;
 }
 
+.button {
+  background: #9c0332;
+  border-radius: 30px;
+  width: 234.06px;
+  height: 48.6px;
+  color: #fff;
+  border: none;
+}
+.button:hover {
+  cursor: url("../img/cursor.png"), pointer;
+}
+
+.heading {
+  color: #fff;
+  font-size: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url("../img/header-bg.png");
   box-sizing: border-box;
@@ -36,17 +57,6 @@ body {
   color: #fff;
   margin-top: 32px;
   margin-bottom: 44px;
-}
-.header__button {
-  background: #9c0332;
-  border-radius: 30px;
-  width: 234.06px;
-  height: 48.6px;
-  color: #fff;
-  border: none;
-}
-.header__button:hover {
-  cursor: url("../img/cursor.png"), pointer;
 }
 
 .games {
@@ -88,7 +98,7 @@ body {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("../img/game3.png");
 }
 .games__list-item:hover {
-  border: 3px solid #44d2ff;
+  box-shadow: 0 0 1px 3px #44d2ff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .games__list-item_text {
@@ -99,6 +109,31 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #fff;
+}
+
+.game {
+  background-color: #000915;
+  padding-top: 233px;
+  padding-bottom: 233px;
+}
+.game__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.game__content {
+  max-width: 584px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 32px;
+}
+.game__text {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
 }
 
 @media (max-width: 767px) {
@@ -139,5 +174,26 @@ body {
   .games__list-item {
     max-width: 343px;
     max-height: 300px;
+  }
+  .game {
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .game__info {
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+  }
+  .game__content {
+    align-items: center;
+    gap: 32px;
+  }
+  .game__text {
+    font-size: 14px;
+    text-align: center;
+  }
+  .heading {
+    font-size: 32px;
   }
 }/*# sourceMappingURL=style.css.map */

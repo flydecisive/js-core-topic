@@ -13,37 +13,56 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header center">
-        <h1 class="title">
-          Добро пожаловать<br />
-          на мой сайт !
-        </h1>
-        <p class="header__text">
-          Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
-          <strong>поехали</strong> и <strong>приступай</strong>
-        </p>
-        <button class="header__button" type="submit">Поехали!</button>
-      </header>
-      <section class="games center">
-        <div class="games__list">
-          <a href="#" class="games__list-link">
-            <div class="games__list-item games__list-item-1">
-              <p class="games__list-item_text">Игра 1</p>
-            </div>
-          </a>
-          <a href="#" class="games__list-link">
-            <div class="games__list-item games__list-item-2">
-              <p class="games__list-item_text">Игра 2</p>
-            </div>
-          </a>
-          <a href="#" class="games__list-link">
-            <div class="games__list-item games__list-item-3">
-              <p class="games__list-item_text">Игра 3</p>
-            </div>
-          </a>
+    <header class="header center">
+      <h1 class="title">
+        Добро пожаловать<br />
+        на мой сайт !
+      </h1>
+      <p class="header__text">
+        Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+        <strong>поехали</strong> и <strong>приступай</strong>
+      </p>
+      <form action="#games" class="header__form">
+        <button class="button" type="submit">Поехали!</button>
+      </form>
+    </header>
+
+    <section class="games center" id="games">
+      <div class="games__list">
+        <a href="#seasons" class="games__list-link">
+          <div class="games__list-item games__list-item-1">
+            <p class="games__list-item_text">Игра 1</p>
+          </div>
+        </a>
+        <a href="#" class="games__list-link">
+          <div class="games__list-item games__list-item-2">
+            <p class="games__list-item_text">Игра 2</p>
+          </div>
+        </a>
+        <a href="#" class="games__list-link">
+          <div class="games__list-item games__list-item-3">
+            <p class="games__list-item_text">Игра 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="game center seasons" id="seasons">
+      <div class="game__info">
+        <div class="game__content">
+          <h2 class="heading">Времена года!</h2>
+          <p class="game__text">
+            Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы
+            узнаете к какому времени года он относится
+          </p>
+          <form action="#" class="game__form" onclick="seasons();">
+            <button class="button">Играть!</button>
+          </form>
         </div>
-      </section>
-    </div>
+        <img class="game__img" src="img/seasons.png" alt="Игра 1" />
+      </div>
+    </section>
+
+    <script src="./seasons.js"></script>
   </body>
 </html>

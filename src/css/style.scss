@@ -21,6 +21,30 @@ body {
   color: $textColor;
 }
 
+.button {
+  background: $buttonColor;
+  border-radius: 30px;
+  width: 234.06px;
+  height: 48.6px;
+  color: $textColor;
+  border: none;
+
+  &:hover {
+    cursor: url('../img/cursor.png'), pointer;
+  }
+}
+
+.heading {
+  color: $textColor;
+  font-size: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @import 'header';
 @import 'games';
+@import 'game';
+
 @import 'mobile';
