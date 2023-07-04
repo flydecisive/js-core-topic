@@ -75,3 +75,78 @@ for (let i = 0; i < arr.length; i++) {
 console.log(newArr);
 
 // Задание 10
+arr = [];
+for (let i = 0; i < Math.floor(Math.random() * 10 + 1); i++) {
+  arr.push(Math.floor(Math.random() * 10 + 1));
+}
+console.log(arr);
+
+for (let i = 0; i < arr.length; i++) {
+  if (i + 1 === arr.length) {
+    break;
+  } else {
+    console.log(arr[i] + arr[i + 1]);
+  }
+}
+
+// Задание 11
+// Переиспользую массив с рандомными элементами
+newArr = arr.map((el) => el ** 2);
+console.log(newArr);
+
+// Задание 12
+const getLengthWords = (arr) => {
+  const result = arr.map((el) => el.length);
+  return result;
+};
+
+console.log(
+  getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква'])
+);
+
+// Задание 13
+function filterPositive(array) {
+  const newArr = [];
+  for (let el of array) {
+    if (el < 0) {
+      newArr.push(el);
+    }
+  }
+
+  return newArr;
+}
+
+console.log(filterPositive([-1, 0, 5, -10, 56]));
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
+
+// Задание 14
+arr = [];
+for (let i = 0; i < 10; i++) {
+  arr[i] = Math.floor(Math.random() * 11);
+}
+
+newArr = [];
+for (let el of arr) {
+  if (el % 2 === 0) {
+    newArr.push(el);
+  }
+}
+
+console.log(arr);
+console.log(newArr);
+
+// Задание 15
+arr = [];
+for (let i = 0; i < 6; i++) {
+  arr[i] = Math.floor(Math.random() * 11);
+}
+
+const arrLength = arr.length;
+sum = 0;
+
+for (let el of arr) {
+  sum += el;
+}
+
+const result = sum / arrLength;
+console.log(result);
