@@ -34,7 +34,7 @@
             <p class="games__list-item_text">Игра 1</p>
           </div>
         </a>
-        <a href="#" class="games__list-link">
+        <a href="#words" class="games__list-link">
           <div class="games__list-item games__list-item-2">
             <p class="games__list-item_text">Игра 2</p>
           </div>
@@ -63,6 +63,23 @@
       </div>
     </section>
 
+    <section class="game words center" id="words">
+      <div class="game__info words__info">
+        <img class="game__img words__img" src="img/words.png" alt="Игра 2" />
+        <div class="game__content words__content">
+          <h2 class="heading">Запомни слова</h2>
+          <p class="game__text words__text">
+            При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+            необходимо запомнить.
+          </p>
+          <form action="#" class="game__form" onclick="rememberWords(words);">
+            <button class="button">Играть!</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <script src="./seasons.js"></script>
+    <script src="./remember-words.js"></script>
   </body>
 </html>

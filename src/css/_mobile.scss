@@ -68,4 +68,14 @@
   .heading {
     font-size: 32px;
   }
+
+  .words {
+    &__content {
+      order: 1;
+    }
+
+    &__img {
+      order: 2;
+    }
+  }
 }
