@@ -193,7 +193,16 @@ body {
     font-size: 14px;
     text-align: center;
   }
+  .game__img {
+    max-width: 90vw;
+  }
   .heading {
     font-size: 32px;
+  }
+  .words__content {
+    order: 1;
+  }
+  .words__img {
+    order: 2;
   }
 }/*# sourceMappingURL=style.css.map */

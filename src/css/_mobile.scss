@@ -63,9 +63,23 @@
       font-size: 14px;
       text-align: center;
     }
+
+    &__img {
+      max-width: 90vw;
+    }
   }
 
   .heading {
     font-size: 32px;
+  }
+
+  .words {
+    &__content {
+      order: 1;
+    }
+
+    &__img {
+      order: 2;
+    }
   }
 }
